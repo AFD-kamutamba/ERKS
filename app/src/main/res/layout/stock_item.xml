@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:id="@+id/item_ers_id"
+    android:weightSum="20"
+    android:background="@drawable/item_border"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <TextView
+        android:id="@+id/item_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="ID"
+        android:textSize="20sp"
+        android:layout_weight="0"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/item_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Amount"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:text=" x" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/picture_item_stock"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="2"/>
+
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Item"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:layout_weight="4"/>
+
+
+    <Button
+        android:id="@+id/item_addstock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="addStock"
+        android:layout_gravity="center_vertical"
+        android:text="Add Stock"
+        android:textSize="26dp"
+        android:layout_weight="6"
+        android:background="@drawable/pay_button_style"
+        android:layout_marginRight="10dp"
+        android:drawableRight="@drawable/plus_icon_green"
+        android:paddingLeft="60dp"
+        android:paddingRight="30dp"/>
+
+
+
+    <Button
+        android:id="@+id/item_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="checkStock"
+        android:text="Check Stock"
+        android:textSize="26dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="6"
+        android:background="@drawable/pay_button_style"
+        android:drawableRight="@drawable/refresh_icon"
+        android:paddingLeft="60dp"
+        android:paddingRight="30dp"/>
+
+</LinearLayout>

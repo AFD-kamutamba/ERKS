@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stock_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6"
+        >
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Snacks"
+                android:textSize="20dp"
+                android:onClick="selectSnacks"
+                android:id="@+id/select_snacks"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_candy_icon"
+                android:background="@drawable/button_style1"/>
+
+
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Drinks"
+                android:textSize="20dp"
+                android:onClick="selectDrinks"
+                android:id="@+id/select_drinks"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_drinks_icon"
+                android:background="@drawable/button_style3"/>
+
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Hygienic"
+                android:textSize="20dp"
+                android:onClick="selectHygienic"
+                android:id="@+id/select_hygienic"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_hygienic_icon"
+                android:background="@drawable/button_style2"/>
+
+
+
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Veggies"
+                android:textSize="20dp"
+                android:onClick="selectVegetables"
+                android:id="@+id/select_vegetables"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_veggies_icon"
+                android:background="@drawable/button_style4"/>
+
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Talk Time"
+                android:textSize="20dp"
+                android:onClick="selectTalkTime"
+                android:id="@+id/select_talk_time"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_talk_time_icon"
+                android:background="@drawable/button_style5"/>
+
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Other"
+                android:textSize="20dp"
+                android:onClick="selectOther"
+                android:id="@+id/select_other"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_other_icon"
+                android:background="@drawable/button_style6"/>
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Resto"
+                android:textSize="20dp"
+                android:onClick="selectRestaurant"
+                android:id="@+id/select_restaurant"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_restaurant_icon"
+                android:background="@drawable/button_style7"/>
+
+        </LinearLayout>
+
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/stock_product_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="10dp"
+            android:layout_weight="5"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

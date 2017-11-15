@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/cash_flow"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center">-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="13">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="4"
+            android:layout_weight="3">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:text="DATE : "
+                    android:background="@drawable/pay_button_style"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:text="Category : "
+                    android:background="@drawable/pay_button_style"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:text="Period : "
+                    android:background="@drawable/pay_button_style"/>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:onClick="choseDateCashflow"
+                    android:background="@drawable/pay_button_style"
+                    android:id="@+id/date"/>
+                <Spinner
+                    android:id="@+id/cashflowCategorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pay_button_style"
+                    android:popupBackground="@drawable/pay_button_style"
+                    />
+
+                <Spinner
+                    android:id="@+id/cashflowPeriodSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pay_button_style"
+                    android:popupBackground="@drawable/pay_button_style"/>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:weightSum="4"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:text="REVENUE : "
+                    android:background="@drawable/pay_button_style"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:text="Discrepancy :"
+                    android:background="@drawable/pay_button_style"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:text="EXPENSES : "
+                    android:background="@drawable/pay_button_style"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:text="NETTO : "
+                    android:background="@drawable/pay_button_style"/>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:weightSum="4"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:background="@drawable/pay_button_style"
+                    android:id="@+id/revenue"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:background="@drawable/pay_button_style"
+                    android:id="@+id/discr"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:background="@drawable/pay_button_style"
+                    android:id="@+id/expenses"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:background="@drawable/pay_button_style"
+                    android:id="@+id/netto"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Name"
+            android:textColor="@color/categoryTabColor1"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="Amount"
+            android:textColor="@color/categoryTabColor2"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="Revenue (K)"
+            android:textColor="@color/categoryTabColor3"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/cash_flow_items"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:dividerHeight="0dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Create Cashflow File"
+            android:onClick="makePdfCsvCashflow"
+            android:background="@drawable/pay_button_style"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+<!--</RelativeLayout>-->

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Electronic Record Keeping System</string>
+    <string name="Sell">Sell</string>
+    <string name="Buy">Buy</string>
+    <string name="product">Add/Remove Products</string>
+    <string name="Bookkeeping">View Bookkeeping</string>
+    <string name="add_name">Add item name</string>
+    <string name="add_price">Add item price</string>
+    <string name="add_amount">Add item amount</string>
+    <string name="Checkout">Checkout</string>
+    <string name="record_list">Record List</string>
+    <string name="record_revenue">Revenue</string>
+    <string name="currency">K</string>
+
+
+</resources>

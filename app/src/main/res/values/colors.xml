@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#78AB46</color>
+    <color name="colorPrimaryDark">#000000 </color>
+    <color name="colorAccent">#7EC0EE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000 </color>
+    <color name="skyblue">#7EC0EE</color>
+    <color name="green">#78AB46</color>
+    <color name="grey">#ddd </color>
+    <color name="darkgreen">#526F35</color>
+    <color name="darkgrey">#7A7A7A</color>
+    <color name="snackTabColor">#BD8A5B</color>
+    <color name="drinkTabColor">#3B7B6B</color>
+    <color name="talkTimeTabColor">#396D74</color>
+    <color name="fridgeTabColor">#3E607A</color>
+    <color name="hygenicTabColor">#BD8A5B</color>
+    <color name="otherTabColor">#7EC0EE</color>
+    <color name="categoryTabColor1">#3E607A</color>
+    <color name="categoryTabColor2">#ff701f</color>
+    <color name="categoryTabColor3">#fdd468</color>
+    <color name="categoryTabColor4">#6ab8c2</color>
+    <color name="categoryTabColor5">#e6371a</color>
+    <color name="categoryTabColor6">#f3f6db</color>
+    <color name="categoryTabColor7">#BD8A5B</color>
+    <color name="categoryTabColor8">#BD8A5B</color>
+
+
+</resources>

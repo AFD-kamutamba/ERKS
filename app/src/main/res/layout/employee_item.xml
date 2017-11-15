@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/item_ers_id"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="@drawable/item_border">
+
+    <TextView
+        android:id="@+id/employee_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:textSize="26sp"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:id="@+id/employee_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:text="Password"
+        android:textSize="26sp"
+        android:textColor="@color/black"/>
+
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/item_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="deleteEmployee"
+        android:layout_gravity="center_vertical"
+        android:textAlignment="center"
+
+        android:paddingLeft="30dp"
+        android:text="Remove"
+        android:textSize="26dp"
+        android:drawableRight="@drawable/cancel_admin_popup_icon"
+
+        android:layout_weight="1"
+        android:background="@drawable/pay_button_style"/>
+
+</LinearLayout>

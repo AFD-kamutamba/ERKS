@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cash_flow_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/basket_border"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="Item"
+            android:textColor="@color/categoryTabColor1"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/item_amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text=" amount "
+            android:textColor="@color/categoryTabColor2"
+            android:textSize="26dp"/>
+
+        <TextView
+            android:id="@+id/item_revenue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text=" revenue "
+            android:textColor="@color/categoryTabColor3"
+            android:textSize="26dp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

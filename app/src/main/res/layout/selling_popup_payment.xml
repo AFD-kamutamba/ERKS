@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:weightSum="19">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:gravity="left|center_vertical"
+    android:layout_marginTop="20dp"
+    android:text="   Finalise Payment"
+    android:textStyle="bold"
+    android:background="@drawable/header_pattern"
+    android:textColor="#000"
+    android:textSize="20sp"
+    android:layout_weight="2"/>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="0dp" android:weightSum="9" android:layout_weight="13" android:layout_marginTop="20dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="6"
+        android:weightSum="34">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text=""
+            android:id="@+id/calculation_string"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:layout_weight="4"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="6"
+            android:weightSum="3">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textSize="20dp"
+                android:onClick="UserClickedOne"
+                android:id="@+id/button_click_one"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:textSize="20dp"
+                android:onClick="UserClickedTwo"
+                android:id="@+id/button_click_two"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:textSize="20dp"
+                android:onClick="UserClickedThree"
+                android:id="@+id/button_click_three"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="6"
+            android:weightSum="3">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="4"
+                android:textSize="20dp"
+                android:onClick="UserClickedFour"
+                android:id="@+id/button_click_four"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:textSize="20dp"
+                android:onClick="UserClickedFive"
+                android:id="@+id/button_click_five"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:textSize="20dp"
+                android:onClick="UserClickedSix"
+                android:id="@+id/button_click_six"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="6"
+            android:weightSum="3">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="7"
+                android:textSize="20dp"
+                android:onClick="UserClickedSeven"
+                android:id="@+id/button_click_seven"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="8"
+                android:textSize="20dp"
+                android:onClick="UserClickedEight"
+                android:id="@+id/button_click_eight"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="9"
+                android:textSize="20dp"
+                android:onClick="UserClickedNine"
+                android:id="@+id/button_click_nine"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="6"
+            android:weightSum="3">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="20dp"
+                android:onClick="UserClickedZero"
+                android:id="@+id/button_click_zero"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="6"
+            android:weightSum="3">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="20dp"
+                android:onClick="UserClickedPlus"
+                android:id="@+id/button_click_plus"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="."
+                android:textSize="20dp"
+                android:onClick="UserClickedPoint"
+                android:id="@+id/button_click_point"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingTop="30dp"
+                android:drawableTop="@drawable/go_back_arrow"
+                android:textSize="20dp"
+                android:onClick="UserClickedBack"
+                android:id="@+id/button_click_back"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:background="@color/grey"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="Total cost: "
+                android:textColor="#000"
+                android:textSize="26sp"
+                android:layout_weight="9"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="K "
+                android:textColor="@color/categoryTabColor4"
+                android:textSize="36sp"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/total_cost"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/categoryTabColor4"
+                android:textSize="36sp"
+                android:layout_weight="9"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="Received: "
+                android:textColor="#000"
+                android:textSize="26sp"
+                android:layout_weight="9"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="K "
+                android:textColor="@color/categoryTabColor4"
+                android:textSize="36sp"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/money_received"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/categoryTabColor4"
+                android:textSize="36sp"
+                android:layout_weight="9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="Change: "
+                android:textColor="#000"
+                android:textSize="26sp"
+                android:layout_weight="9"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="K "
+                android:textColor="@color/categoryTabColor4"
+                android:textSize="36sp"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="left|center_vertical"
+                android:id="@+id/money_owed"
+                android:textColor="@color/categoryTabColor4"
+                android:textSize="36sp"
+                android:layout_weight="9"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        android:weightSum="8">
+
+        <ImageButton
+            android:id="@+id/cancel_payment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="cancelPayment"
+            android:layout_weight="2"
+            android:src="@drawable/cancel_admin_popup_icon"
+            android:background="@drawable/pay_button_style"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="28dp"
+            android:text="Go Back or Confirm" />
+
+        <ImageButton
+            android:id="@+id/accept_payment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="confirmPayment"
+            android:layout_weight="2"
+            android:src="@drawable/confirm_admin_popup_icon"
+            android:background="@drawable/pay_button_style"
+            android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>

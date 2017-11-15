@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/item_ers_id"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="@drawable/item_border">
+
+    <TextView
+        android:id="@+id/item_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="ID"
+        android:textSize="20sp"
+        android:layout_weight="0"/>
+
+
+    <ImageView
+        android:id="@+id/picture_item"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Item"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:textSize="26sp"
+        android:layout_weight="1"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="K"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Price"
+            android:textSize="26sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/item_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="updateItem"
+        android:text="Update"
+        android:textSize="26dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:paddingLeft="30dp"
+        android:drawableRight="@drawable/arrow_up"
+        android:background="@drawable/pay_button_style"
+        />
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/item_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="deleteItem"
+        android:layout_gravity="center_vertical"
+        android:textAlignment="center"
+
+        android:paddingLeft="30dp"
+        android:text="Remove"
+        android:textSize="26dp"
+        android:drawableRight="@drawable/cancel_admin_popup_icon"
+
+        android:layout_weight="1"
+        android:background="@drawable/pay_button_style"/>
+
+</LinearLayout>

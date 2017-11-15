@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/grid_item_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+
+
+        <TextView
+            android:id="@+id/check_stock_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Check stock for "
+            android:textColor="#000"
+            android:textSize="26sp"/>
+
+
+        <ImageView
+            android:id="@+id/check_stock_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/camera"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current stock:        "
+                android:textColor="#000"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/current_stock"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="#"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Give new stock:    "
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:layout_weight="0"/>
+
+            <EditText
+                android:id="@+id/set_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="#"
+                android:textColor="#000"
+                android:inputType="number"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/check_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/cancel_admin_popup_icon"
+                android:background="@drawable/pay_button_style"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                />
+
+            <ImageButton
+                android:id="@+id/check_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/confirm_admin_popup_icon"
+                android:background="@drawable/pay_button_style"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

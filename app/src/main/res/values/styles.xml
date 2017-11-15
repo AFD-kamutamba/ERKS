@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <!--"Theme.AppCompat.Light.DarkActionBar"-->
+    <style name="ourTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:background">@drawable/header_pattern</item>-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+
+
+    </style>
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:height">500dp</item>
+
+    </style>
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+
+
+
+
+</resources>

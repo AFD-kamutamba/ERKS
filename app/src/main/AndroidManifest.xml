@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="afd.ers">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/ourTheme">
+
+        <uses-feature android:name="android.hardware.camera"
+            android:required="true" />
+
+
+        <activity android:name=".SellingActivity" android:label="Kiosk"
+        android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter"
+                />
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".StockActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".ProductActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".analyse.TopSellActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".analyse.GraphActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".SoldRecordListActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".StockRecordListActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".analyse.AnalyseActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".analyse.StockAnalyseActivity"
+        android:screenOrientation="landscape"></activity>
+        <activity android:name=".analyse.CashFlowActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".ExtraActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".EmployeeActivity"
+            android:screenOrientation="landscape"></activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

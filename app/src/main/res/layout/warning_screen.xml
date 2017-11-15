@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/warning_screen_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/warning_icon"
+            android:layout_weight="2.00"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Administrator mode"
+            android:textColor="#000"
+            android:textSize="32sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:text="Type abc"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint=""
+                android:textColor="#999999"
+                android:textSize="22dp"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

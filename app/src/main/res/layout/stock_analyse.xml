@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/stock_analyse">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Snacks"
+                android:textSize="20dp"
+                android:onClick="selectSnacks"
+                android:id="@+id/select_snacks"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_candy_icon"
+                android:background="@drawable/button_style1"/>
+
+
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Drinks"
+                android:textSize="20dp"
+                android:onClick="selectDrinks"
+                android:id="@+id/select_drinks"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_drinks_icon"
+                android:background="@drawable/button_style3"/>
+
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Hygienic"
+                android:textSize="20dp"
+                android:onClick="selectHygienic"
+                android:id="@+id/select_hygienic"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_hygienic_icon"
+                android:background="@drawable/button_style2"/>
+
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Veggies"
+                android:textSize="20dp"
+                android:onClick="selectVegetables"
+                android:id="@+id/select_vegetables"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_veggies_icon"
+                android:background="@drawable/button_style4"/>
+
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Talk Time"
+                android:textSize="20dp"
+                android:onClick="selectTalkTime"
+                android:id="@+id/select_talk_time"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_talk_time_icon"
+                android:background="@drawable/button_style5"/>
+
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Other"
+                android:textSize="20dp"
+                android:onClick="selectOther"
+                android:id="@+id/select_other"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_other_icon"
+                android:background="@drawable/button_style6"/>
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="Resto"
+                android:textSize="20dp"
+                android:onClick="selectRestaurant"
+                android:id="@+id/select_restaurant"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableTop="@drawable/large_restaurant_icon"
+                android:background="@drawable/button_style7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_weight="2"
+                android:textSize="26dp"
+                android:gravity="center"
+                android:text="Buy for the next"/>
+
+            <Button
+                android:id="@+id/set_stock_in_days"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="30"
+                android:inputType="number"
+                android:drawableLeft="@drawable/calender_icon"
+                android:drawableRight="@drawable/calender_icon"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+
+                android:textColor="@color/black"
+                android:onClick="setDays"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="26dp"
+                android:background="@drawable/pay_button_style"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="26dp"
+                android:gravity="center"
+                android:text="day(s)"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey"/>
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/stock_analyse_items"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:dividerHeight="2dp"
+            android:gravity="center"
+            android:layout_weight="5"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
